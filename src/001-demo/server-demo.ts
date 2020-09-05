@@ -49,5 +49,5 @@ function serveAboutPage(res: ServerResponse): Promise<any> {
     .catch(err => handleHtmlError(err, res));
 }
 
-const NODE_PORT = process.env.PORT || 5050;
-server.listen(NODE_PORT, () => console.log(`[server]: Server runs at http://localhost:${NODE_PORT}`));
+const PORT = process.env.PORT || 5050;
+server.listen(PORT, () => console.log(`[server]: Server runs at http://localhost:${PORT}`));
